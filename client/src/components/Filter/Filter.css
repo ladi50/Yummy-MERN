@@ -1,0 +1,65 @@
+.filter {
+  padding: 40px;
+}
+
+.filter > h1 {
+  color: rgb(11, 50, 175);
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter__divs {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.filter__div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.filter__div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.filter__div > label,
+.filter__div > div > p {
+  font-weight: 600;
+}
+
+.filter__div > label {
+  margin-right: 10px;
+}
+
+.filter__div > div > p {
+  position: absolute;
+  top: -25px;
+}
+
+.filter__div > input {
+  padding: 4px;
+  padding-left: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 880px) {
+  .filter__divs {
+    flex-direction: column;
+  }
+
+  .filter__div {
+    justify-content: space-between;
+    width: 250px;
+    margin: 20px auto;
+  }
+}

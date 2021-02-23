@@ -1,0 +1,15 @@
+.navlinks-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navlinks-mobile > a {
+  color: black;
+  font-size: 1.7rem;
+  margin: 20px;
+}
+
+.navlinks-mobile > a.active {
+  color: #1d75de;
+}

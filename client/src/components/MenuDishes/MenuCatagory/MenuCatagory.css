@@ -1,0 +1,22 @@
+.menuCatagory {
+  width: 70%;
+  margin: 30px auto;
+  padding-bottom: 40px;
+}
+
+.menuCatagory > h3 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 620px) {
+  .menuCatagory {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .menuCatagory > h3 {
+    text-align: center;
+  }
+}

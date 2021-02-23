@@ -1,0 +1,27 @@
+.menu__main {
+  display: flex;
+}
+
+.menu__main > .menuDetails:first-child > .menuOrders {
+  display: none;
+}
+
+@media screen and (min-width: 1250.01px) {
+  .menu__main > .menuDetails:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .menu__main {
+    display: block;
+  }
+
+  .menu__main > .menuDetails:last-child {
+    border-top: 1px solid lightgray;
+  }
+
+  .menu__main > .menuDetails:last-child > div:first-child {
+    display: none;
+  }
+}

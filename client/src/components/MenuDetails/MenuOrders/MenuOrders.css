@@ -1,0 +1,28 @@
+.menuOrders {
+  padding-bottom: 10px;
+}
+
+.menuOrders > h3 {
+  font-size: 1.8rem;
+  margin: 10px 0 20px;
+}
+
+.menuOrders__products {
+  overflow: auto;
+  max-height: 350px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 620px) {
+  .menuOrders {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .menuOrders > h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

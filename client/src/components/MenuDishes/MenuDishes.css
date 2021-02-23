@@ -1,0 +1,18 @@
+.menuDishes {
+  flex: 0.6;
+  padding: 20px;
+  border-right: 2px solid lightgray;
+  border-left: 2px solid lightgray;
+}
+
+@media screen and (max-width: 1250px) {
+  .menuDishes {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .menuDishes {
+    padding: 20px 5px;
+  }
+}

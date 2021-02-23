@@ -1,0 +1,10 @@
+.invoiceDishes {
+  margin-bottom: 40px;
+}
+
+.invoiceDishes > p {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}

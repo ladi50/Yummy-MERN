@@ -1,0 +1,43 @@
+.restaurants {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.restaurants__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.restaurants__empty > h1 {
+  font-size: 2.2rem;
+}
+
+.restaurants__empty > p {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .restaurants__empty > h1 {
+    font-size: 1.8rem;
+  }
+
+  .restaurants__empty > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .restaurants__empty > h1 {
+    font-size: 1.6rem;
+  }
+
+  .restaurants__empty > p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+.sidebar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  height: 100vh;
+  width: 400px;
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 1000.1px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .sidebar {
+    width: 100%;
+  }
+}

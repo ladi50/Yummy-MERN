@@ -1,0 +1,37 @@
+.hero {
+  height: 700px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero > button,
+.hero > a {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: background-color 0.2s ease-out;
+}
+
+.hero > button:hover,
+.hero > a:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+@media screen and (max-width: 620px) {
+  .hero > button,
+  .hero > a {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    width: fit-content;
+  }
+}

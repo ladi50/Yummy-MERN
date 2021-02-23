@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #454ae4;
+  width: 400px;
+  margin: 30px auto 30px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form > h2 {
+  margin: 0 auto 10px;
+  font-size: 2rem;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > div > label {
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.form > div > input {
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 40px;
+  border: 1px solid gray;
+  outline-width: 0;
+  text-transform: initial;
+}
+
+.form > div > input::placeholder {
+  text-transform: capitalize;
+}
+
+.form > div > small {
+  color: red;
+  padding: 4px 12px;
+}
+
+.form > p {
+  text-align: center;
+}
+
+.form > p > a {
+  color: blue;
+}
+
+@media screen and (max-width: 420px) {
+  .form {
+    width: 97%;
+  }
+}

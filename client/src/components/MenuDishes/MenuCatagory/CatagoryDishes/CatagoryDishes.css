@@ -1,0 +1,9 @@
+.catagoryDishes > li:first-child {
+  border-top: 1px solid lightgray;
+  padding-top: 30px;
+}
+
+.catagoryDishes > li:last-child {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 30px;
+}

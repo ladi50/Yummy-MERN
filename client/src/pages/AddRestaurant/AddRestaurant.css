@@ -1,0 +1,237 @@
+.addRestaurant {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 95%;
+  max-width: 900px;
+}
+
+.addRestaurant > h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 0 0 40px;
+}
+
+.addRestaurant > div {
+  padding: 20px;
+}
+
+.addRestaurant
+  > div:not(:last-child):not(.addRestaurant__catagories):not(.addRestaurant__button) {
+  display: flex;
+  flex-direction: column;
+}
+
+.addRestaurant > div:not(:last-child) > label {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.addRestaurant > div:not(:last-child):not(.addRestaurant__delivery) > input {
+  font-size: 1.2rem;
+  padding: 4px 15px;
+  border-radius: 4px;
+}
+
+.addRestaurant__catagories {
+  border-bottom: 1px solid lightgray;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0 !important;
+}
+
+.addRestaurant__catagories > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.addRestaurant__catagories > h3 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.addRestaurant__catagories > div > div {
+  display: inline-block;
+  cursor: pointer;
+  width: fit-content;
+  height: 30px;
+}
+
+.addRestaurant__catagories > div > div > label:hover {
+  background-color: #454ae4;
+}
+
+.addRestaurant__catagories > div > div:hover label {
+  color: white;
+}
+
+.addRestaurant__catagories > div > div {
+  height: 100%;
+  margin: 10px 5px;
+}
+
+.addRestaurant__catagories > div > div > label {
+  border-radius: 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+  text-transform: lowercase;
+  font-weight: 600;
+  user-select: none;
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+.addRestaurant__image {
+  width: 50%;
+  min-width: 250px;
+  height: fit-content;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.addRestaurant__image > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.addRestaurant__image > p {
+  background-color: gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.addRestaurant__delivery {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.addRestaurant__delivery > h3 > small {
+  color: rgb(51, 51, 51);
+  font-size: 0.9rem;
+  text-transform: initial;
+}
+
+.addRestaurant__delivery > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.addRestaurant__delivery > div > div > label {
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+}
+
+.addRestaurant__delivery > div > div > input {
+  width: 70px;
+  margin: 15px;
+  padding: 2px 4px;
+}
+
+.addRestaurant__schedule > div:last-child {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 25px;
+}
+
+.addRestaurant__schedule > h3 {
+  font-size: 1.8rem;
+  margin: 80px 0 100px;
+  text-align: center;
+}
+
+.addRestaurant__schedule > h4,
+.addRestaurant__delivery > h3 {
+  border-top: 1px solid lightgray;
+  padding-top: 25px;
+  font-size: 1.3rem;
+  color: rgb(19, 19, 19);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.addRestaurant__schedule-input {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.addRestaurant__schedule-input > div > input[type="time"],
+.addRestaurant__delivery > input {
+  width: 75px;
+  margin: 15px;
+  padding: 2px 4px;
+}
+
+.addRestaurant__schedule-input > div > label {
+  color: rgb(45, 45, 45);
+  font-weight: 600;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%);
+  cursor: pointer;
+}
+
+.addRestaurant__button {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.addRestaurant__button > button,
+.addRestaurant__addImage > button {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .addRestaurant {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .addRestaurant {
+    padding: 20px 10px;
+    width: 98%;
+  }
+
+  .addRestaurant > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .addRestaurant__schedule > h3 {
+    font-size: 1.6rem;
+  }
+
+  .addRestaurant__schedule > h4 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+
+  .addRestaurant__schedule-input,
+  .addRestaurant__delivery > div {
+    justify-content: space-around;
+  }
+
+  .addRestaurant__schedule-input > div,
+  .addRestaurant__delivery > div > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .addRestaurant__schedule-input > div > *,
+  .addRestaurant__delivery > div > div > * {
+    text-align: center;
+  }
+}

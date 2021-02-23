@@ -1,0 +1,88 @@
+.reviews {
+  border-top: 2px solid lightgray;
+  padding: 50px;
+  position: relative;
+}
+
+.reviews__add {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.reviews__add > h4 {
+  font-size: 2rem;
+}
+
+.reviews__add > h4:first-child {
+  margin-bottom: 30px;
+  text-transform: initial;
+}
+
+.reviews__add > h4:last-child {
+  padding-top: 80px;
+}
+
+.reviews__form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.reviews__form > * {
+  margin-bottom: 10px;
+}
+
+.reviews__form > label {
+  font-size: 1.1rem;
+}
+
+.reviews__form > input,
+.reviews__form > textarea {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.reviews__form > textarea {
+  text-transform: initial;
+}
+
+.reviews__form > button {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.reviews__empty {
+  margin: 70px 0 30px;
+  text-align: center;
+  color: rgb(44, 44, 44);
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 700px) {
+  .reviews {
+    padding: 50px 20px;
+  }
+
+  .reviews__add {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .reviews__empty {
+    font-size: 1.1rem;
+  }
+
+  .reviews__add > h4 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .reviews__add  {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,46 @@
+.advantages {
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.advantages__skill {
+  max-width: 300px;
+  margin: 40px 0;
+}
+
+.advantages__skill > .MuiSvgIcon-root {
+  margin: 0 auto 20px;
+  display: block;
+  color: rgb(10, 10, 10);
+  font-size: 2.2rem;
+}
+
+.advantages__skill > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.advantages__skill > p {
+  padding-left: 20px;
+}
+
+@media (max-width: 760px) {
+  .advantages {
+    padding: 80px 20px;
+  }
+
+  .advantages__skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: initial;
+    margin: 40px 10px;
+  }
+  
+  .advantages__skill > p {
+    text-align: center;
+    padding: 0;
+  }
+}

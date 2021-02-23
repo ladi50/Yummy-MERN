@@ -1,0 +1,123 @@
+.restaurant {
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px gray, -2px -2px 14px gray;
+  width: 400px;
+  height: 326.5px;
+}
+
+.restaurant__imageDiv {
+  position: relative;
+}
+
+.restaurant__imageDiv > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.restaurant__imageDiv-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: calc(100% - 5px);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.restaurant > a {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  display: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-out;
+}
+
+.restaurant:hover > a,
+.restaurant:hover .restaurant__imageDiv-backdrop {
+  display: block;
+}
+
+.restaurant > a:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.restaurant__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.restaurant__details > div > h3 {
+  margin-top: 8px;
+  font-size: 1.3rem;
+}
+
+.restaurant__details-catagories {
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+}
+
+.restaurant__details-deliveryTime {
+  background-color: #454ae4;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.restaurant__subDetails {
+  display: flex;
+  font-size: 0.7rem;
+  padding-left: 10px;
+  border-top: 1px solid lightgray;
+  margin: 10px 5px 0;
+}
+
+.restaurant__subDetails > span {
+  padding: 10px 0 10px 5px;
+}
+
+.restaurant__details-container {
+  border: 1px solid lightgray;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 500px) {
+  .restaurant {
+    width: 350px;
+    height: fit-content;
+  }
+  
+  .restaurant > a {
+    top: 25px;
+    left: 45px;
+    display: block;
+    font-size: 0.7rem;
+    padding-right: 20px;
+    padding-left: 25px;
+    border-top-right-radius: 0;
+  }
+
+  .restaurant:hover .restaurant__imageDiv-backdrop {
+    display: none;
+  }
+}

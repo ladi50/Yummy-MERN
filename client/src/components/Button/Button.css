@@ -1,0 +1,19 @@
+.button {
+  border: 3px solid #454AE4;
+  border-radius: 40px;
+  padding: 14px 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #454AE4;
+  cursor: pointer;
+  outline-width: 0;
+  transition: all 0.3s ease-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #454AE4;
+  color: white;
+}

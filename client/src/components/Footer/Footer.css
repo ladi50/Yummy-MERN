@@ -1,0 +1,12 @@
+.footer {
+  background-color: #454ae4;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    font-size: 0.9rem;
+  }
+}

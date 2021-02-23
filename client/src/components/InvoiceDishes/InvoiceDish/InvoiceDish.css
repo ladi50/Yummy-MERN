@@ -1,0 +1,45 @@
+.invoiceDish {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 50%;
+  margin: 15px auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.invoiceDish__details {
+  flex: 0.6;
+}
+
+.invoiceDish__details > p {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.invoiceDish__details > p > span {
+  font-weight: 600;
+}
+
+.invoiceDish__image {
+  flex: 0.4;
+  text-align: right;
+}
+
+.invoiceDish__image > img {
+  object-fit: contain;
+  width: 60%;
+  min-width: 130px;
+}
+
+@media (max-width: 780px) {
+  .invoiceDish {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .invoiceDish {
+    width: 95%;
+  }
+}

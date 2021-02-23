@@ -1,0 +1,14 @@
+.navlink {
+  padding: 20px;
+  margin: auto 10px;
+  height: 70%;
+  color: rgb(48, 48, 48);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.navlink.active {
+  border-bottom: 3px solid #7477E9;
+}

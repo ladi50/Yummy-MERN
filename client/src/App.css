@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+p {
+  text-transform: none;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  user-select: none;
+}
+
+#root {
+  padding-top: 100px;
+  min-height: calc(100vh - 81.6px);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(240, 240, 240);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #454ae4;
+  border-radius: 80px;
+}

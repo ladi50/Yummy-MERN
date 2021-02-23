@@ -1,0 +1,125 @@
+.order {
+  padding: 20px 40px;
+  margin: 30px auto;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  width: 60%;
+}
+
+.order__header {
+  margin: 5px 0 20px;
+}
+
+.order__header-date {
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.order__header-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.order__header-id > .MuiSvgIcon-root {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.order__details {
+  width: 85%;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+}
+
+.order__restaurant {
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+}
+
+.order__restaurant > h3 {
+  font-size: 1.4rem;
+}
+
+.order__restaurant > ul > li {
+  font-size: 1.2rem;
+  color: rgb(56, 56, 56);
+  margin: 10px 0;
+}
+
+.order__payment {
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+}
+
+.order__payment > h3 {
+  font-size: 1.4rem;
+}
+
+.order__payment > ul > li {
+  font-size: 1.2rem;
+  color: rgb(56, 56, 56);
+  margin: 10px 0;
+}
+
+.order__payment > ul > li > span {
+  font-weight: 600;
+  color: black;
+}
+
+.order__price {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.order__button {
+  display: flex;
+  justify-content: center;
+}
+
+.order-show-enter {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.order-show-enter-active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-out;
+}
+
+.order-show-exit {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-show-exit-active {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 800px) {
+  .order {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .order {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .order__details {
+    width: 100%;
+  }
+}

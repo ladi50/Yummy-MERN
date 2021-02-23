@@ -1,0 +1,72 @@
+.addMenu {
+  text-align: center;
+  padding: 40px 40px 0;
+  margin: 0 auto;
+}
+
+.addMenu > * {
+  margin: 40px 0;
+}
+
+.addMenu > h1 {
+  font-size: 2.8rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.addMenu__button {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  padding-top: 40px;
+}
+
+.addMenu__button > button {
+  width: 80%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.addMenu__addCatagory {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  border-top: 1px solid lightgray;
+}
+
+.addMenu__addCatagory > div {
+  margin: 10px 0;
+}
+
+.addMenu__addCatagory > div > label {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.addMenu__addCatagory > div > input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.addMenu__addCatagory > button {
+  margin: 10px auto;
+}
+
+@media (min-width: 1200px) {
+  .addMenu {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .addMenu {
+    padding: 40px 0 0;
+    width: 98%;
+  }
+
+  .addMenu > h1 {
+    font-size: 2rem;
+  }
+}

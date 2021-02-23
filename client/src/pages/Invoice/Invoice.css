@@ -1,0 +1,172 @@
+.invoice {
+  width: 70%;
+  margin: 40px auto 0;
+  padding: 50px 15px 15px;
+  border-top: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  border-left: 2px solid lightgray;
+}
+
+.invoice__success > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invoice__success > div > h2 {
+  margin-right: 5px;
+}
+
+.invoice__success > div > h2,
+.invoice__success > div:first-child > .MuiSvgIcon-root {
+  font-size: 2.2rem;
+}
+
+.invoice__success > div:first-child > .MuiSvgIcon-root {
+  color: green;
+}
+
+.invoice__success > div > h3 {
+  margin-right: 5px;
+}
+
+.invoice__success > div > h3,
+.invoice__success > div:nth-child(2) > .MuiSvgIcon-root {
+  margin-top: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.invoice__success > div:last-child > p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: rgb(51, 51, 51);
+}
+
+.invoice__restaurant {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.invoice__restaurant > h4 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.invoice__restaurant > div {
+  margin: 20px 0;
+}
+
+.invoice__restaurant > div > p {
+  text-transform: capitalize;
+}
+
+.invoice__order {
+  border-bottom: 1px solid lightgray;
+}
+
+.invoice__order > h5 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+.invoice__order > p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 auto 10px;
+  width: 50%;
+  min-width: fit-content;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 30px;
+  color: rgb(54, 54, 54);
+}
+
+.invoice__payment {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.invoice__payment > h6 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.invoice__payment > p {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.invoice__payment > p > span {
+  font-weight: 600;
+}
+
+.invoice__button {
+  padding-top: 40px;
+  border-top: 1px solid lightgray;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.emptyInvoice__link {
+  text-align: center;
+  margin: 20px auto 0;
+  display: block;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.emptyInvoice__link:active,
+.emptyInvoice__link:visited {
+  color: blue;
+}
+
+@media (max-width: 650px) {
+  .invoice {
+    width: 95%;
+  }
+
+  .invoice__success > div > h2 {
+    font-size: 1.45rem;
+  }
+
+  .invoice__success > div:first-child > .MuiSvgIcon-root {
+    font-size: 1.8rem;
+  }
+
+  .invoice__success > div > h3 {
+    font-size: 1rem;
+  }
+
+  .invoice__success > div:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .invoice__order > p {
+    font-size: 1rem;
+  }
+
+  .invoice__payment {
+    justify-content: left;
+  }
+
+  .invoice__payment > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .invoice__button {
+    flex-direction: column;
+  }
+
+  .invoice__button > button {
+    font-size: 1.2rem;
+  }
+
+  .invoice__payment > p:nth-child(3) > span {
+    display: block;
+  }
+}
